@@ -1,0 +1,1 @@
+rootProject.name = "ru.vladleesi.chronicle-backend"
