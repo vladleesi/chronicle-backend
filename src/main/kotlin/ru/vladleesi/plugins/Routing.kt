@@ -4,11 +4,14 @@ import io.ktor.server.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import ru.vladleesi.data.repository.TaskRepositoryImpl
 import ru.vladleesi.domain.entity.AboutEntity
-import ru.vladleesi.domain.entity.Task
 import ru.vladleesi.domain.entity.TaskPage
 
 fun Application.configureRouting() {
+
+    // TODO: Move to DI
+    val repo = TaskRepositoryImpl()
 
     routing {
         get("/about") {
@@ -18,11 +21,7 @@ fun Application.configureRouting() {
             call.respond(
                 TaskPage(
                     title = "Задачи",
-                    taskList = listOf(
-                        Task(title = "Сделать дела", isCompleted = true),
-                        Task(title = "Сделать другие дела", isCompleted = false),
-                        Task(title = "Сделать еще какие то дела", isCompleted = false)
-                    ),
+                    taskList = repo.getTaskList(),
                     taskCountPerPage = 15
                 )
             )

@@ -7,7 +7,9 @@ import ru.vladleesi.plugins.configureSecurity
 import ru.vladleesi.plugins.configureSerialization
 
 fun main() {
-    embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
+    // TODO: Replace to flavors
+    val post: Int = System.getenv("PORT")?.toInt() ?: 8080
+    embeddedServer(Netty, port = post) {
         configureRouting()
         configureSecurity()
         configureSerialization()
