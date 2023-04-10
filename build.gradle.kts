@@ -6,6 +6,7 @@ plugins {
     application
     kotlin("jvm") version "1.6.21"
     kotlin("plugin.serialization") version "1.6.21"
+    id("io.ktor.plugin") version "2.2.4"
 }
 
 group = "ru.vladleesi"
@@ -44,4 +45,10 @@ dependencies {
 
 tasks.create("stage") {
     dependsOn("installDist")
+}
+
+ktor {
+    fatJar {
+        archiveFileName.set("fat.jar")
+    }
 }

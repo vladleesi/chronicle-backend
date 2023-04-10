@@ -26,10 +26,10 @@ fun Application.configureRouting() {
                 )
             )
         }
-        authenticate("auth-oauth-google") {
-            post("/login") {
-
-            }
-        }
+//        authenticate("auth-oauth-google") {
+//            post("/login") {
+//
+//            }
+//        }
     }
 }
