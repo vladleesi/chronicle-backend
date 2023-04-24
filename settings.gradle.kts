@@ -1,1 +1,1 @@
-rootProject.name = "ru.vladleesi.chronicle-backend"
+rootProject.name = "chronicle-backend"

@@ -1,4 +1,4 @@
-package ru.vladleesi.domain.entity
+package io.github.vladleesi.domain.entity
 
 import kotlinx.serialization.Serializable
 
