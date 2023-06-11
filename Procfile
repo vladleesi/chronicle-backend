@@ -1,1 +1,1 @@
-web: ./build/install/io.github.vladleesi.chronicle-backend/bin/io.github.vladleesi.chronicle-backend
+web: ./build/install/dev.vladleesi.chronicle-backend/bin/dev.vladleesi.chronicle-backend

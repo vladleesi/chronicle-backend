@@ -4,15 +4,15 @@ val logback_version: String by project
 
 plugins {
     application
-    kotlin("jvm") version "1.6.21"
-    kotlin("plugin.serialization") version "1.6.21"
+    kotlin("jvm") version "1.8.22"
+    kotlin("plugin.serialization") version "1.8.22"
     id("io.ktor.plugin") version "2.2.4"
 }
 
-group = "io.github.vladleesi"
+group = "dev.vladleesi"
 version = "0.0.1"
 application {
-    mainClass.set("io.github.vladleesi.ApplicationKt")
+    mainClass.set("dev.vladleesi.ApplicationKt")
 
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")

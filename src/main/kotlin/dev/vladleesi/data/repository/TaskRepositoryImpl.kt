@@ -1,8 +1,8 @@
-package io.github.vladleesi.data.repository
+package dev.vladleesi.data.repository
 
-import io.github.vladleesi.domain.entity.Task
-import io.github.vladleesi.domain.repository.TaskRepository
-import io.github.vladleesi.utils.toTime
+import dev.vladleesi.domain.entity.Task
+import dev.vladleesi.domain.repository.TaskRepository
+import dev.vladleesi.utils.toTime
 
 class TaskRepositoryImpl : TaskRepository {
 

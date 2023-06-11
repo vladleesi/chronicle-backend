@@ -1,11 +1,11 @@
-package io.github.vladleesi.plugins
+package dev.vladleesi.plugins
 
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import io.github.vladleesi.data.repository.TaskRepositoryImpl
-import io.github.vladleesi.domain.entity.AboutEntity
-import io.github.vladleesi.domain.entity.TaskPage
+import dev.vladleesi.data.repository.TaskRepositoryImpl
+import dev.vladleesi.domain.entity.AboutEntity
+import dev.vladleesi.domain.entity.TaskPage
 
 fun Application.configureRouting() {
 

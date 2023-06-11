@@ -1,4 +1,4 @@
-package io.github.vladleesi.plugins
+package dev.vladleesi.plugins
 
 import io.ktor.client.*
 import io.ktor.http.*

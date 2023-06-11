@@ -1,6 +1,6 @@
-package io.vladleesi
+package dev.vladleesi
 
-import io.github.vladleesi.plugins.configureRouting
+import dev.vladleesi.plugins.configureRouting
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*

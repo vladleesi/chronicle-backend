@@ -1,4 +1,4 @@
-package io.github.vladleesi.utils
+package dev.vladleesi.utils
 
 import java.text.ParseException
 import java.text.SimpleDateFormat
